@@ -1,4 +1,4 @@
-# This file is part of Daisy (Telegram Bot)
+# This file is part of EMAA
 
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU Affero General Public License as
@@ -15,12 +15,12 @@
 
 from pymongo import UpdateOne
 
-from DaisyX.services.mongo import mongodb
-from DaisyX.utils.logger import log
+from EMAA.services.mongo import mongodb
+from EMAA.utils.logger import log
 
 changelog = \
     """
-    Daisy database v8
+    EMAA database v8
     Warns: Change serialization method of warnmodes (time based)
     """
 log.info(changelog)
