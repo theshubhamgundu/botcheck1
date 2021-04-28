@@ -1,4 +1,4 @@
-from DaisyX.services.mongo2 import db
+from EMMA.services.mongo2 import db
 from typing import Dict, List, Union
 
 filtersdb = db.filters
