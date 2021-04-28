@@ -1,4 +1,4 @@
-# This file is part of Daisy (Telegram Bot)
+# This file is part of EMAA BOT
 
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU Affero General Public License as
@@ -15,10 +15,10 @@
 
 from pymongo import InsertOne
 
-from DaisyX.services.mongo import mongodb
-from DaisyX.utils.logger import log
+from EMAA.services.mongo import mongodb
+from EMAA.utils.logger import log
 
-log.info('Daisy Database v5')
+log.info('EMAA Database v5')
 log.info("Feds: migrate to old feds database structure")
 log.info('Starting updating all feds...')
 
