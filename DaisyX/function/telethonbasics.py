@@ -4,8 +4,8 @@ import os
 from telethon import events
 from telethon.tl import functions, types
 from telethon.tl.types import *
-from DaisyX.services.telethon import tbot as borg
-from DaisyX.function.pluginhelpers import runcmd
+from EMAA.services.telethon import tbot as borg
+from EMAA.function.pluginhelpers import runcmd
 
 async def convert_to_image(event, borg):
     lmao = await event.get_reply_message()
