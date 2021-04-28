@@ -1,4 +1,4 @@
-# This file is part of Daisy (Telegram Bot)
+# This file is part of EMAA BOT
 
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU Affero General Public License as
@@ -28,9 +28,9 @@ from telethon.errors import (
 )
 from telethon.tl.custom import Button
 
-import DaisyX.modules.utils.tmarkdown as tmarkdown
-from DaisyX import BOT_USERNAME
-from DaisyX.services.telethon import tbot
+import EMAA.modules.utils.tmarkdown as tmarkdown
+from EMAA import BOT_USERNAME
+from EMAA.services.telethon import tbot
 from .language import get_chat_lang
 from .message import get_args
 from .tmarkdown import tbold, titalic, tpre, tcode, tlink, tstrikethrough, tunderline
