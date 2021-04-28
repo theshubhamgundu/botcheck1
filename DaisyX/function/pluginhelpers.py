@@ -20,9 +20,9 @@ from datetime import datetime
 import sys
 import traceback
 from functools import wraps
-from DaisyX import OWNER_ID , SUPPORT_CHAT
+from EMAA import OWNER_ID , SUPPORT_CHAT
 from pyrogram.types import ChatPermissions
-from DaisyX.services.pyrogram import pbot
+from EMAA.services.pyrogram import pbot
 
 
 from PIL import Image, ImageDraw, ImageFont
