@@ -1,4 +1,4 @@
-# This file is part of Daisy (Telegram Bot)
+# This file is part of EMAA BOT
 
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU Affero General Public License as
@@ -23,10 +23,10 @@ from aiogram.types import CallbackQuery, Message
 from aiogram.utils.exceptions import BadRequest, Unauthorized, ChatNotFound
 from telethon.tl.functions.users import GetFullUserRequest
 
-from DaisyX import OPERATORS, bot
-from DaisyX.services.mongo import db
-from DaisyX.services.redis import bredis
-from DaisyX.services.telethon import tbot
+from EMAA import OPERATORS, bot
+from EMAA.services.mongo import db
+from EMAA.services.redis import bredis
+from EMAA.services.telethon import tbot
 from .language import get_string
 from .message import get_arg
 
