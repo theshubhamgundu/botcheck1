@@ -1,4 +1,4 @@
-# This file is part of Daisy (Telegram Bot)
+# This file is part of Daisy EMAA
 
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU Affero General Public License as
@@ -13,10 +13,10 @@
 # You should have received a copy of the GNU Affero General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-from DaisyX.services.mongo import mongodb
-from DaisyX.utils.logger import log
+from EMAA.services.mongo import mongodb
+from EMAA.utils.logger import log
 
-log.info('Daisy Database v3')
+log.info('EMAA Database v3')
 log.info('Support notes aliases')
 log.info('Starting updating all notes...')
 
