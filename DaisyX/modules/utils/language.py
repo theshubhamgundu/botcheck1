@@ -1,4 +1,4 @@
-# This file is part of Daisy (Telegram Bot)
+# This file is part of EMAA
 
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU Affero General Public License as
@@ -18,9 +18,9 @@ import os
 import yaml
 from babel.core import Locale
 
-from DaisyX.services.mongo import db
-from DaisyX.services.redis import redis
-from DaisyX.utils.logger import log
+from EMAA.services.mongo import db
+from EMAA.services.redis import redis
+from EMAA.utils.logger import log
 
 LANGUAGES = {}
 
