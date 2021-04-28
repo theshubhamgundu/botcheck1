@@ -1,4 +1,4 @@
-# This file is part of Daisy (Telegram Bot)
+# This file is part of EMAA BOT
 
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU Affero General Public License as
@@ -14,10 +14,10 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 from aiogram.utils.exceptions import Unauthorized
 
-from DaisyX.modules.utils.user_details import is_user_admin
-from DaisyX.services.mongo import db
-from DaisyX.services.redis import redis
-from DaisyX.utils.cached import cached
+from EMAA.modules.utils.user_details import is_user_admin
+from EMAA.services.mongo import db
+from EMAA.services.redis import redis
+from EMAA.utils.cached import cached
 
 
 async def get_connected_chat(message, admin=False, only_groups=False, from_id=None, command=None):
