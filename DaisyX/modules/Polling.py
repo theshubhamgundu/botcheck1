@@ -1,10 +1,10 @@
 from pymongo import MongoClient
 from telethon import *
 from telethon.tl import *
-from DaisyX.config import get_str_key
-from DaisyX import BOT_ID
-from DaisyX.services.telethon import tbot
-from DaisyX.services.events import register
+from EMAA.config import get_str_key
+from EMAA import BOT_ID
+from EMAA.services.telethon import tbot
+from EMAA.services.events import register
 MONGO_DB_URI = get_str_key("MONGO_URI", required=True)
 client = MongoClient()
 client = MongoClient(MONGO_DB_URI)
@@ -394,7 +394,7 @@ async def stop(event):
 
 
 __help__ = """
-You can now send polls anonymously with Julia
+You can now send polls anonymously with EMAA
 Here is how you can do it:
 <b> Parameters </b> -
  ▪️ poll-id - a poll id consists of an 5 digit random integer, this id is automatically removed from the system when you stop your previous poll
@@ -411,8 +411,6 @@ Here is how you can do it:
 Reply to the poll with `/stoppoll [poll-id]` to stop the poll
 <b> Fogot poll id </b>
 /forgotpollid - to reset poll
-
-Special credits to Julia project and Friday Userbot
 """
 
 
