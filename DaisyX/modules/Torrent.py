@@ -5,8 +5,8 @@ from telethon import events
 from telethon.tl import functions, types
 from telethon.tl.types import *
 
-from DaisyX.services.mongo import mongodb as db
-from DaisyX.services.telethon import tbot
+from EMAA.services.mongo import mongodb as db
+from EMAA.services.telethon import tbot
 
 approved_users = db.approve
 
@@ -310,7 +310,7 @@ async def torrentstop(event):
     await tbot.edit_message(
         chatid,
         msgid,
-        "Thanks for using.\n❤️ from [Daisy X](t.me/DaisyXBot) !",
+        "Thanks for using.\n❤️ from [EMAA](t.me/EmmaAGroup_bot) !",
         link_preview=False,
     )
 
@@ -388,8 +388,6 @@ async def paginate_nexttorrent(event):
     )
 __help__ = """
  - /torrent <i>text</i>: Search for torrent links
-
-Special Credits to Sumanjay for api and also for julia project
 """
 
 __mod_name__ = "Torrent"
