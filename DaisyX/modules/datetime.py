@@ -22,11 +22,11 @@ from typing import List
 
 import requests
 
-from DaisyX.services.events import register
-from DaisyX.services.telethon import tbot
+from EMMA.services.events import register
+from EMMA.services.telethon import tbot
 from telethon import types
 from telethon.tl import functions
-from DaisyX.config import get_str_key
+from EMMA.config import get_str_key
 
 
 TIME_API_KEY = get_str_key("TIME_API_KEY", required=False)
