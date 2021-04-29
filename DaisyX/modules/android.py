@@ -1,4 +1,4 @@
-# This file is part of Daisy (Telegram Bot)
+# This file is part of EMAA BOT
 
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU Affero General Public License as
@@ -19,8 +19,8 @@ import rapidjson as json
 from bs4 import BeautifulSoup
 
 from aiogram.types import InlineKeyboardButton, InlineKeyboardMarkup
-from DaisyX import decorator
-from DaisyX.decorator import register
+from EMAA import decorator
+from EMAA.decorator import register
 from .utils.android import GetDevice
 from .utils.disable import disableable_dec
 from .utils.message import get_arg, get_cmd
