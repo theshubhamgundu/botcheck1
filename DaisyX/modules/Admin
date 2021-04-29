@@ -1,6 +1,6 @@
 #    MissJuliaRobot (A Telegram Bot Project)
 #    Copyright (C) 2019-2021 Julia (https://t.me/MissJulia_Robot)
-
+#    Part of emma bot
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU Affero General Public License as published by
 #    the Free Software Foundation, in version 3 of the License.
@@ -14,7 +14,7 @@
 #    along with this program.  If not, see < https://www.gnu.org/licenses/agpl-3.0.en.html/ >.
 
 
-from DaisyX.services.telethon  import tbot
+from EMAA.services.telethon  import tbot
 from telethon.errors import (
     ChatAdminRequiredError,
     ImageProcessFailedError,
@@ -46,8 +46,8 @@ from telethon.tl import types
 from telethon.tl.functions.channels import EditBannedRequest
 from telethon.tl.types import *
 
-from DaisyX import *
-from DaisyX.services.events import register
+from EMAA import *
+from EMAA.services.events import register
 
 from telethon.tl.functions.messages import EditChatDefaultBannedRightsRequest
 
