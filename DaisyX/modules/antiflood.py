@@ -1,4 +1,4 @@
-# This file is part of Daisy (Telegram Bot)
+# This file is part of EMAA BOT
 
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU Affero General Public License as
@@ -27,17 +27,17 @@ from aiogram.types.message import ContentType, Message
 from aiogram.utils.callback_data import CallbackData
 from babel.dates import format_timedelta
 
-from DaisyX import dp
-from DaisyX.decorator import register
-from DaisyX.modules.utils.connections import chat_connection
-from DaisyX.modules.utils.language import get_strings_dec, get_strings
-from DaisyX.modules.utils.message import convert_time, get_args, need_args_dec
-from DaisyX.modules.utils.restrictions import ban_user, kick_user, mute_user
-from DaisyX.modules.utils.user_details import is_user_admin, get_user_link
-from DaisyX.services.mongo import db
-from DaisyX.services.redis import bredis, redis
-from DaisyX.utils.cached import cached
-from DaisyX.utils.logger import log
+from EMAA import dp
+from EMAA.decorator import register
+from EMAA.modules.utils.connections import chat_connection
+from EMAA.modules.utils.language import get_strings_dec, get_strings
+from EMAA.modules.utils.message import convert_time, get_args, need_args_dec
+from EMAA.modules.utils.restrictions import ban_user, kick_user, mute_user
+from EMAA.modules.utils.user_details import is_user_admin, get_user_link
+from EMAA.services.mongo import db
+from EMAA.services.redis import bredis, redis
+from EMAA.utils.cached import cached
+from EMAA.utils.logger import log
 
 cancel_state = CallbackData('cancel_state', 'user_id')
 
