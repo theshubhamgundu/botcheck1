@@ -1,18 +1,18 @@
 
 import os
-from DaisyX.services.telethon import tbot
+from EMAA.services.telethon import tbot
 from time import time
 
-import DaisyX.services.sql.chatbot_sql as sql
+import EMAA.services.sql.chatbot_sql as sql
 from coffeehouse.api import API
 from coffeehouse.exception import CoffeeHouseError as CFError
 from coffeehouse.lydia import LydiaAI
-from DaisyX import OWNER_ID, BOT_ID
+from EMAA import OWNER_ID, BOT_ID
 from telethon import types
 from telethon.tl import functions
-from DaisyX.services.events import register
+from EMAA.services.events import register
 from telethon import events
-from DaisyX.config import get_str_key
+from EMAA.config import get_str_key
 
 
 LYDIA_API_KEY = get_str_key("LYDIA_API_KEY", required=False)
@@ -87,7 +87,7 @@ async def check_message(event):
         return
     message = str(event.text)
     reply_msg = await event.get_reply_message()
-    if message.lower() == "daizy":
+    if message.lower() == "EMAA":
         return True
     if reply_msg:
         if reply_msg.sender_id == BOT_ID:
@@ -129,15 +129,14 @@ async def _(event):
             print(e)
             
 __help__ = """
-<b> Chatbot </b>
- - /chatbot <i>ON/OFF</i>: Enables and disables AI Chat mode (EXCLUSIVE)
+<b> AI CHAT </b>
+ - /Aichat <i>ON/OFF</i>: Enables and disables AI Chat mode (EXCLUSIVE)
  - /addlydia: Activates lydia on your group (UNSTABLE)
  - /rmlydia : Deactivates lydia on your group (UNSTABLE)
  
 <b> Assistant </b>
  - /ask <i>question</i>: Ask question from daisy
  - /ask <i> reply to voice note</i>: Get voice reply
-<i>Special credits to Julia project (Voice ai) and FridayUserbot</i>
-"""
+
 
 __mod_name__ = "AI Assistant"           
