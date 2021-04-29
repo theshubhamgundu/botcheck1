@@ -5,9 +5,9 @@ from telethon.tl import functions
 from telethon import events
 
 #Importing from the serices
-from DaisyX.services.telethon import tbot
-from DaisyX.services.sql import afk_sql as sql
-from DaisyX.services.events import register
+from EMAA.services.telethon import tbot
+from EMAA.services.sql import afk_sql as sql
+from EMAA.services.events import register
 
 
 @register(pattern=r"(.*?)")
