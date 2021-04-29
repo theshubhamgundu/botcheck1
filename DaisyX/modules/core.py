@@ -1,7 +1,7 @@
-from DaisyX import OWNER_ID
-from DaisyX.services.telethon import tbot
-from DaisyX import OPERATORS  as DEV_USERS
-from DaisyX.services.events import register
+from EMMA import OWNER_ID
+from EMMA.services.telethon import tbot
+from EMMA import OPERATORS  as DEV_USERS
+from EMMA.services.events import register
 import os
 import asyncio
 import os
