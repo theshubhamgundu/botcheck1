@@ -10,9 +10,9 @@ import numpy as np
 from pydub import AudioSegment
 from telethon import types
 from telethon import events
-from DaisyX.services.telethon import tbot
-from DaisyX.function.telethonbasics import is_admin
-from DaisyX import BOT_ID,OWNER_ID
+from EMAA.services.telethon import tbot
+from EMMA.function.telethonbasics import is_admin
+from EMMA import BOT_ID,OWNER_ID
 TMP_DOWNLOAD_DIRECTORY = "./"
 
 @tbot.on(events.NewMessage(pattern="/bassboost (.*)"))
@@ -87,7 +87,7 @@ async def __(event):
               event.chat_id,
               m,
               voice_note=True,
-              caption="Bass Boosted, \nDone By @DaisySupport_Official",
+              caption="Bass Boosted, \nDone By @Emaabot_support",
           )
           
           os.remove(m)
@@ -100,7 +100,7 @@ async def __(event):
           await tbot.send_file(
               event.chat_id,
               m,
-              caption="Bass Boosted, \nDone By @DaisySupport_Official",
+              caption="Bass Boosted, \nDone By @Emaabot_support",
           )
 
           os.remove(m)
