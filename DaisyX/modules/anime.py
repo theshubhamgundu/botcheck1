@@ -1,4 +1,4 @@
-# This file is part of DaisyXBot (Telegram Bot)
+# This file is part of EMAA bot
 
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU Affero General Public License as
@@ -19,7 +19,7 @@ import html
 import bs4
 
 from aiogram.types import InlineKeyboardButton, InlineKeyboardMarkup
-from DaisyX.decorator import register
+from EMAA.decorator import register
 from .utils.anime import (
     shorten, t, airing_query, manga_query,
     character_query, anime_query, fav_query
