@@ -15,9 +15,9 @@ import requests
 import wget
 from bs4 import BeautifulSoup
 from pyrogram import filters
-from DaisyX.services.pyrogram import pbot
+from EMAA.services.pyrogram import pbot
 
-from DaisyX.function.pluginhelpers import progress
+from EMAA.function.pluginhelpers import progress
 
 
 @pbot.on_message(filters.command("mod") & ~filters.edited & ~filters.bot)
