@@ -25,10 +25,10 @@ import json
 from better_profanity import profanity
 from textblob import TextBlob
 import os
-from DaisyX.services.sql.nsfw_watch_sql import add_nsfwatch, rmnsfwatch, get_all_nsfw_enabled_chat, is_nsfwatch_indb
-#from DaisyX.db.mongo_helpers.nsfw_guard import add_chat, get_all_nsfw_chats, is_chat_in_db, rm_chat
-from DaisyX.function.telethonbasics import get_all_admin_chats,is_admin
-from DaisyX.function.pluginhelpers import convert_to_image
+from EMAA.services.sql.nsfw_watch_sql import add_nsfwatch, rmnsfwatch, get_all_nsfw_enabled_chat, is_nsfwatch_indb
+#from EMAA.db.mongo_helpers.nsfw_guard import add_chat, get_all_nsfw_chats, is_chat_in_db, rm_chat
+from EMAA.function.telethonbasics import get_all_admin_chats,is_admin
+from EMAA.function.pluginhelpers import convert_to_image
 from telethon.tl.types import (
     ChannelParticipantsAdmins,
     ChatAdminRights,
@@ -42,15 +42,15 @@ from telethon.tl.functions.channels import (
     EditPhotoRequest,
 )
 from google_trans_new import google_translator
-from DaisyX.services.mongo import mongodb as db
-from DaisyX.services.events import register
+from EMAA.services.mongo import mongodb as db
+from EMAA.services.events import register
 
-from DaisyX.services.telethon import tbot
-from DaisyX import BOT_ID
+from EMAA.services.telethon import tbot
+from EMAA import BOT_ID
 from pyrogram import filters
 from pyrogram.types import ChatPermissions
-from DaisyX.services.pyrogram import pbot
-from DaisyX.function.pluginhelpers import member_permissions
+from EMAA.services.pyrogram import pbot
+from EMAA.function.pluginhelpers import member_permissions
 from json import JSONDecodeError
 import json
 
@@ -139,7 +139,7 @@ async def ws(event):
         await event.delete()
         st = sender.first_name
         hh = sender.id
-        final = f"**NSFW DETECTED**\n\n{st}](tg://user?id={hh}) your message contain NSFW content.. So, Daisy deleted the message\n\n **Nsfw Sender - User / Bot :** {st}](tg://user?id={hh})  \n\n`⚔️Automatic Detections Powered By DaisyAI` \n**#GROUP_GUARDIAN** "
+        final = f"**NSFW DETECTED**\n\n{st}](tg://user?id={hh}) your message contain NSFW content.. So, EMAA deleted the message\n\n **Nsfw Sender - User / Bot :** {st}](tg://user?id={hh})  \n\n`⚔️Automatic Detections Powered By EMAA AI` \n**#GROUP_GUARDIAN** "
         dev = await event.respond(final)
         await asyncio.sleep(10)
         await dev.delete()
@@ -426,14 +426,13 @@ async def del_profanity(event):
                     
 __help__ = """
 <b> Group Guardian: </b>
-✪ Daisy can protect your group from NSFW senders, Slag word users and also can force members to use English
+✪ EMAA can protect your group from NSFW senders, Slag word users and also can force members to use English
 
 <b>Commmands</b>
  - /nsfwguardian <i>on/off</i> - Enable|Disable Porn cleaning
  - /globalmode <i>on/off</i> - Enable|Disable English only mode
  - /profanity <i>on/off</i> - Enable|Disable slag word cleaning
  
-Note: Special credits goes to Julia project and Friday Userbot
  
 """
 __mod_name__ = "Group Guardian"                    
