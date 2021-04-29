@@ -1,15 +1,15 @@
 
 import os
-from DaisyX.services.events import register
+from EMAA.services.events import register
 from telethon.tl import functions
-from DaisyX.services.telethon import tbot
+from EMAA.services.telethon import tbot
 import asyncio
 import re
 
 from telethon import utils, Button
 from telethon.tl import types
 from telethon import events
-from DaisyX.services.sql.filters_sql import (
+from EMAA.services.sql.filters_sql import (
     add_filter,
     get_all_filters,
     remove_filter,
