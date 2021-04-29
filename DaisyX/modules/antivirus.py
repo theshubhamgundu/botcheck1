@@ -15,14 +15,14 @@
 
 
 import os
-from DaisyX.services.telethon import tbot
+from EMMA.services.telethon import tbot
 from telethon import events
 from telethon.tl import functions
 from telethon.tl import types
 from telethon.tl.types import MessageMediaDocument, DocumentAttributeFilename
-from DaisyX.services.events import register
+from EMMA.services.events import register
 import cloudmersive_virus_api_client
-from DaisyX.config import get_str_key
+from EMMA.config import get_str_key
 
 async def is_register_admin(chat, user):
     if isinstance(chat, (types.InputPeerChannel, types.InputChannel)):
