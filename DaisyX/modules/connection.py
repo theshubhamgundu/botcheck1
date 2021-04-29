@@ -1,4 +1,4 @@
-# This file is part of Daisy (Telegram Bot)
+# This file is part of EMAA bot
 
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU Affero General Public License as
@@ -22,10 +22,10 @@ from aiogram.utils.callback_data import CallbackData
 from aiogram.utils.deep_linking import get_start_link
 from aiogram.utils.exceptions import BotBlocked, CantInitiateConversation
 
-from DaisyX import bot
-from DaisyX.decorator import register
-from DaisyX.services.mongo import db
-from DaisyX.services.redis import redis
+from EMAA import bot
+from EMAA.decorator import register
+from EMAA.services.mongo import db
+from EMAA.services.redis import redis
 from .utils.connections import chat_connection, set_connected_chat, get_connection_data
 from .utils.language import get_strings_dec
 from .utils.message import get_arg
@@ -72,7 +72,7 @@ async def connect_to_chat_direct(message, strings):
         await def_connect_chat(message, user_id, chat_id, chat_title)
     except (BotBlocked, CantInitiateConversation):
         await message.reply(strings['connected_pm_to_me'].format(chat_name=chat_title))
-        redis.set('DaisyX_connected_start_state:' + str(user_id), 1)
+        redis.set('EMAA_connected_start_state:' + str(user_id), 1)
 
 
 # In pm without args - show last connected chats
@@ -192,7 +192,7 @@ async def allow_users_to_connect(message, strings, chat):
 @get_strings_dec('connections')
 @chat_connection()
 async def connected_start_state(message, strings, chat):
-    key = 'DaisyX_connected_start_state:' + str(message.from_user.id)
+    key = 'EMAA_connected_start_state:' + str(message.from_user.id)
     if redis.get(key):
         await message.reply(strings['pm_connected'].format(chat_name=chat['chat_title']))
         redis.delete(key)
