@@ -15,8 +15,8 @@
 
 from aiogram.types.inline_keyboard import InlineKeyboardMarkup, InlineKeyboardButton
 
-from DaisyX.decorator import register, COMMANDS_ALIASES
-from DaisyX.services.mongo import db
+from EMMA.decorator import register, COMMANDS_ALIASES
+from EMMA.services.mongo import db
 from .utils.connections import chat_connection
 from .utils.disable import DISABLABLE_COMMANDS, disableable_dec
 from .utils.language import get_strings_dec
