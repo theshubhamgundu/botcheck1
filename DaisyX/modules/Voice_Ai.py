@@ -10,9 +10,9 @@ from telethon.tl import functions, types
 from telethon.tl.types import *
 
 
-from DaisyX.services.telethon import tbot
-from DaisyX.services.events import register
-from DaisyX.config import get_str_key
+from EMAA.services.telethon import tbot
+from EMAA.services.events import register
+from EMAA.config import get_str_key
 
 IBM_WATSON_CRED_PASSWORD = get_str_key("IBM_WATSON_CRED_PASSWORD", None)
 IBM_WATSON_CRED_URL = get_str_key("IBM_WATSON_CRED_URL", None)
@@ -57,7 +57,7 @@ async def _(event):
         res = get(server)
         if "Wolfram Alpha did not understand" in res.text:
             await event.reply(
-                "Sorry, Daisy's AI systems could't recognized your question.."
+                "Sorry, EMAA's AI systems could't recognized your question.."
             )
             return
         await event.reply(f"**{i}**\n\n" + res.text, parse_mode="markdown")
@@ -98,7 +98,7 @@ async def _(event):
 
                     if "Wolfram Alpha did not understand" in res:
                         answer = (
-                            "I'm sorry Daisy's AI system can't undestand your problem"
+                            "I'm sorry EMAA's AI system can't undestand your problem"
                         )
                     else:
                         answer = res.text
@@ -126,7 +126,7 @@ async def _(event):
                     transcript_response == "Wolfram Alpha did not understand your input"
                 ):
                     try:
-                        answer = "Sorry, Daisy's AI system can't understand you.."
+                        answer = "Sorry, EMAA's AI system can't understand you.."
                         tts = gTTS(answer, tld="com", lang="en")
                         tts.save("results.mp3")
                     except AssertionError:
