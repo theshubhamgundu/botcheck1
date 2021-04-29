@@ -1,4 +1,4 @@
-# This file is part of Daisy (Telegram Bot)
+# This file is part of EMAA BOT
 
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU Affero General Public License as
@@ -15,14 +15,14 @@
 
 import os
 
-from DaisyX.utils.logger import log
+from EMAA.utils.logger import log
 import sys
 
 LOADED_MODULES = []
 MOD_HELP = {}
 
 def list_all_modules() -> list:
-    modules_directory = 'DaisyX/modules'
+    modules_directory = 'EMAA/modules'
 
     all_modules = []
     for module_name in os.listdir(modules_directory):
