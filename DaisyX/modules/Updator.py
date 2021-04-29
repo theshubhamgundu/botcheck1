@@ -12,23 +12,23 @@
 # I KNOW YOU ARE GOOD YOU KEEP MY CREDITS 😘
 
 
-from DaisyX.services.events import register
+from EMAA.services.events import register
 from os import remove, execle, path, environ
 import asyncio
 import sys
 from git import Repo
 from git.exc import GitCommandError, InvalidGitRepositoryError, NoSuchPathError
 import heroku3
-from DaisyX import OWNER_ID
-from DaisyX.services.telethon import tbot as update
-from DaisyX.config import get_str_key
+from EMAA import OWNER_ID
+from EMAA.services.telethon import tbot as update
+from EMAA.config import get_str_key
 
 
 HEROKU_APP_NAME = get_str_key("HEROKU_APP_NAME", None)
 HEROKU_API_KEY = get_str_key("HEROKU_API_KEY", None)
 UPSTREAM_REPO_URL = get_str_key("UPSTREAM_REPO_URL", None)
 if not UPSTREAM_REPO_URL:
-    UPSTREAM_REPO_URL= "https://github.com/TeamDaisyX/DaisyX-v2.0"
+    UPSTREAM_REPO_URL= "https://github.com/theshubhamgundu/botcheck1"
     
 requirements_path = path.join(
     path.dirname(path.dirname(path.dirname(__file__))), "requirements.txt"
