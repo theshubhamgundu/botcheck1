@@ -19,9 +19,9 @@ import sys
 from aiogram.types import Update
 from redis.exceptions import RedisError
 
-from DaisyX import dp, bot, OWNER_ID
-from DaisyX.services.redis import redis
-from DaisyX.utils.logger import log
+from EMMA import dp, bot, OWNER_ID
+from EMMA.services.redis import redis
+from EMMA.utils.logger import log
 
 SENT = []
 
