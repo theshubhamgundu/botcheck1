@@ -1,8 +1,8 @@
 from google_trans_new import google_translator
-from DaisyX.services.telethon import tbot
+from EMMA.services.telethon import tbot
 import json
 import requests
-from DaisyX.services.events import register
+from EMMA.services.events import register
 from telethon import *
 from telethon.tl import functions
 import os
