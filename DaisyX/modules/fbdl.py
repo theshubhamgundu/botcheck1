@@ -16,8 +16,8 @@ import requests
 import re
 import html
 import os
-from DaisyX.services.telethon import tbot
-from DaisyX.function.telethonbasics import is_admin
+from EMMA.services.telethon import tbot
+from EMMA.function.telethonbasics import is_admin
 from telethon import events
 
 
@@ -73,9 +73,9 @@ async def _(event):
       await event.reply("Video Downloaded Successfully. Starting To Upload.")
 
       kk = f"{filename}.mp4"
-      caption= f"Facebook Video downloaded Successfully by @DaisyXBot.\nSay hi to devs @DaisySupport_Official."
+      caption= f"Facebook Video downloaded Successfully by @Emmabot.\nSay hi to devs @Emmabotsupport."
 
-      await tbot.send_file(event.chat_id,kk,caption="Facebook Video downloaded Successfully by @DaisyXBot.\nSay hi to devs @DaisySupport_Official.")
+      await tbot.send_file(event.chat_id,kk,caption="Facebook Video downloaded Successfully by @emmabot.\nSay hi to devs @Emmabotsupport.")
       os.system(f"rm {kk}")
     else:
         await event.reply("`You Should Be Admin To Do This!`")
