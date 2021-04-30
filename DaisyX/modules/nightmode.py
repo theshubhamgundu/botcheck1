@@ -14,11 +14,11 @@
 
 from apscheduler.schedulers.asyncio import AsyncIOScheduler 
 from telethon import functions
-from DaisyX.function.telethonbasics import is_admin
-from DaisyX.services.sql.night_mode_sql import add_nightmode, rmnightmode, get_all_chat_id, is_nightmode_indb
+from EMMA.function.telethonbasics import is_admin
+from EMMA.services.sql.night_mode_sql import add_nightmode, rmnightmode, get_all_chat_id, is_nightmode_indb
 from telethon.tl.types import ChatBannedRights
-from DaisyX.services.telethon import tbot
-from DaisyX import BOT_ID
+from EMMA.services.telethon import tbot
+from EMMA import BOT_ID
 from telethon import events
 import logging
 CLEAN_GROUPS = False
