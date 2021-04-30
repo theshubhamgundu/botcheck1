@@ -1,4 +1,4 @@
-# This file is part of Daisy (Telegram Bot)
+# This file is part of EMMA bot
 
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU Affero General Public License as
@@ -17,9 +17,9 @@ import asyncio
 
 from telethon.errors.rpcerrorlist import MessageDeleteForbiddenError
 
-from DaisyX import bot
-from DaisyX.decorator import register
-from DaisyX.services.telethon import tbot
+from EMMA import bot
+from EMMA.decorator import register
+from EMMA.services.telethon import tbot
 from .utils.language import get_strings_dec
 from .utils.notes import BUTTONS
 
