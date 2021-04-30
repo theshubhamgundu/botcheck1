@@ -1,4 +1,4 @@
-# This file is part of Daisy (Telegram Bot)
+# This file is part of EMMA bot
 
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU Affero General Public License as
@@ -13,8 +13,8 @@
 # You should have received a copy of the GNU Affero General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-from DaisyX.decorator import register
-from DaisyX.services.mongo import db
+from EMMA.decorator import register
+from EMMA.services.mongo import db
 
 from .utils.connections import chat_connection
 from .utils.disable import disableable_dec
