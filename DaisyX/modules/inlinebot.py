@@ -24,7 +24,7 @@ from telethon import Button, custom, events
 from youtube_search import YoutubeSearch
 from random import choice
 from re import findall
-from DaisyX.services.telethon import tbot as tgbot
+from EMMA.services.telethon import tbot as tgbot
 
 
 
@@ -36,7 +36,7 @@ async def inline_handler(event):
     query = event.text
     if not query:
         results = builder.article(
-                title="Hello, I'm Daisy! Touch for help!",
+                title="Hello, I'm EMMA! Touch for help!",
                 text=f"Wonder What All You Can Do With Me? Click Below To Know More.",
                 buttons=custom.Button.inline("Explore!", data="explore")
             )
@@ -45,11 +45,11 @@ async def inline_handler(event):
 
 @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"explore")))
 async def explore(event):     
-    tbot_username = "DaisyXBot"
-    LEGENDX = [[Button.switch_inline("Youtube", query='yt', same_peer=True), Button.switch_inline("Google", query='google', same_peer=True)]]
-    LEGENDX += [[Button.switch_inline("Deezer", query='deezer', same_peer=True), Button.switch_inline("Xkcd", query='xkcd', same_peer=True)]]
-    LEGENDX += [[Button.switch_inline("Pornhub", query='ph', same_peer=True)]]
-    oof_stark = f"""**Inline bot service powered by @DaisyXBot**
+    tbot_username = "@EmmaAGroup_bot"
+    DYNAMIC = [[Button.switch_inline("Youtube", query='yt', same_peer=True), Button.switch_inline("Google", query='google', same_peer=True)]]
+    DYNAMIC += [[Button.switch_inline("Deezer", query='deezer', same_peer=True), Button.switch_inline("Xkcd", query='xkcd', same_peer=True)]]
+    DYNAMIC += [[Button.switch_inline("Pornhub", query='ph', same_peer=True)]]
+    oof_stark = f"""**Inline bot service powered by @EmmaAGroup_bot **
 **I'm fully functional in groups. Also I have some cool stuff in inline too**
 **- Search Youtube Video's / Download In Any Chat Itself!**
 **How? :** `@{tbot_username} yt <query>`
@@ -68,7 +68,7 @@ async def explore(event):
 **Example :** `@{tbot_username} ph nohorny`
 **Note :** `Many More Coming! SoonTM`
     	"""
-    await event.edit(oof_stark, buttons=LEGENDX)    
+    await event.edit(oof_stark, buttons=DYNAMIC)    
 
 @tgbot.on(events.InlineQuery(pattern=r"torrent (.*)"))
 async def inline_id_handler(event: events.InlineQuery.Event):
