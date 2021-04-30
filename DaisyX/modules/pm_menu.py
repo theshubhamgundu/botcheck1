@@ -1,4 +1,4 @@
-# This file is part of Daisy (Telegram Bot)
+# This file is part of EMMA bot
 
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU Affero General Public License as
@@ -22,8 +22,8 @@ from aiogram.types.inline_keyboard import (
     InlineKeyboardButton
 )
 
-from DaisyX.decorator import register
-from DaisyX.modules.utils.disable import disableable_dec
+from EMMA.decorator import register
+from EMMA.modules.utils.disable import disableable_dec
 from . import MOD_HELP
 from .utils.disable import disableable_dec
 from .utils.language import get_strings_dec
@@ -73,10 +73,10 @@ async def get_start_func(message, strings, edit=False):
     buttons = InlineKeyboardMarkup()
     buttons.add(InlineKeyboardButton(strings['btn_help'], callback_data='get_help'))
     buttons.add (InlineKeyboardButton(strings['btn_lang'], callback_data='lang_btn'),
-                 InlineKeyboardButton(strings['btn_source'], url='https://github.com/TeamDaisyX/'))
-    buttons.add(InlineKeyboardButton(strings['btn_channel'], url='https://t.me/DaisyXUpdates'),
-                InlineKeyboardButton('👥 Support Grup', url='https://t.me/DaisyXUpdates'))
-    buttons.add(InlineKeyboardButton("👸🏼 Add DaisyX to your group", url=f'https://telegram.me/daisyxbot?startgroup=true'))
+                 InlineKeyboardButton(strings['btn_source'], url='https://github.com/EMMA_bot/'))
+    buttons.add(InlineKeyboardButton(strings['btn_channel'], url='https://t.me/EMMABOT_supportt'),
+                InlineKeyboardButton('👥 Support Grup', url='https://t.me/EMMA_updates'))
+    buttons.add(InlineKeyboardButton("👸🏼 Add EMMA to your group", url=f'https://telegram.me/EmmaAGroup_bot?startgroup=true'))
     # Handle error when user click the button 2 or more times simultaneously
     with suppress(MessageNotModified):
         await task(strings['start_hi'], reply_markup=buttons)
@@ -118,7 +118,7 @@ async def help_cmd(message, strings):
 async def help_cmd_g(message, strings):
     text = (strings['btn_group_help'])
     button = InlineKeyboardMarkup().add(InlineKeyboardButton(
-        text=text, url="https://t.me/DaisyXBOT?start"))
+        text=text, url="https://t.me/EmmaAGroup_bot?start"))
     await message.reply(strings['help_header'], reply_markup=button)
 
 
