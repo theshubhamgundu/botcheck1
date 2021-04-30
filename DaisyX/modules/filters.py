@@ -1,4 +1,4 @@
-# This file is part of Daisy (Telegram Bot)
+# This file is part of EMMA BOT
 
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU Affero General Public License as
@@ -29,12 +29,12 @@ from async_timeout import timeout
 from bson.objectid import ObjectId
 from pymongo import UpdateOne
 
-from DaisyX import loop, bot
-from DaisyX.decorator import register
-from DaisyX.modules import LOADED_MODULES
-from DaisyX.services.mongo import db
-from DaisyX.services.redis import redis
-from DaisyX.utils.logger import log
+from EMMA import loop, bot
+from EMMA.decorator import register
+from EMMA.modules import LOADED_MODULES
+from EMMA.services.mongo import db
+from EMMA.services.redis import redis
+from EMMA.utils.logger import log
 from .utils.connections import chat_connection, get_connected_chat
 from .utils.language import get_strings_dec, get_string
 from .utils.message import need_args_dec, get_args_str
