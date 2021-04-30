@@ -21,13 +21,13 @@ from youtube_dl.utils import (
     XAttrMetadataError,
 )
 
-from DaisyX.function.pluginhelpers import get_readable_time, delete_or_pass, progress,get_text , humanbytes, time_formatter
-from DaisyX.services.pyrogram import pbot
+from EMMA.function.pluginhelpers import get_readable_time, delete_or_pass, progress,get_text , humanbytes, time_formatter
+from EMMA.services.pyrogram import pbot
 from pyrogram.types import Message
 import aiohttp
 import youtube_dl
 import io
-from DaisyX.config import get_str_key
+from EMMA.config import get_str_key
 import lyricsgenius
 from tswift import Song
 from json import JSONDecodeError
