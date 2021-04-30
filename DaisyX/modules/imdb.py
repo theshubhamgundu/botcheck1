@@ -16,14 +16,14 @@
 
 
 import os
-from DaisyX.services.telethon import tbot
+from EMMA.services.telethon import tbot
 import re
 
 import bs4
 import requests
 from telethon import types
 from telethon.tl import functions
-from DaisyX.services.events import register
+from EMMAA.services.events import register
 
 langi = "en"
 
