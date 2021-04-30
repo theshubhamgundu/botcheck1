@@ -14,8 +14,8 @@ import os
 import requests
 from faker import Faker	
 from faker.providers import internet	
-from DaisyX.services.telethon import tbot
-from DaisyX.function.telethonbasics import is_admin
+from EMAA.services.telethon import tbot
+from EMMA.function.telethonbasics import is_admin
 from telethon import events
 
 @tbot.on(events.NewMessage(pattern="/fakegen$"))
@@ -56,7 +56,7 @@ async def _(event):
             with open("FRIDAYOT.jpg", "wb") as f:
                 f.write(response.content)
 
-        captin = f"Fake Image powered by @DaisySupport_Official."
+        captin = f"Fake Image powered by @Emmabot_support."
         fole = "FRIDAYOT.jpg"
         await tbot.send_file(event.chat_id, fole, caption=captin)
         await event.delete()
