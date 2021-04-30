@@ -1,4 +1,4 @@
-# This file is part of DaisyXBot (Telegram Bot)
+# This file is part of EMMA bot
 
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU Affero General Public License as
@@ -21,7 +21,7 @@ from requests import get
 from aiogram.types import Message, ChatType, InlineKeyboardButton, InlineKeyboardMarkup
 from aiogram.utils.exceptions import BadRequest, MessageNotModified, MessageToDeleteNotFound
 
-from DaisyX.decorator import register
+from EMMA.decorator import register
 from .utils.disable import disableable_dec
 from .utils.httpx import http
 from .utils.language import get_strings_dec
