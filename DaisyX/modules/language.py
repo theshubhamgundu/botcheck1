@@ -1,4 +1,4 @@
-# This file is part of Daisy (Telegram Bot)
+# This file is part of EMMA bot
 
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU Affero General Public License as
@@ -19,8 +19,8 @@ from aiogram.types.inline_keyboard import InlineKeyboardMarkup, InlineKeyboardBu
 from aiogram.utils.callback_data import CallbackData
 from aiogram.utils.exceptions import MessageNotModified
 
-from DaisyX.decorator import register
-from DaisyX.services.mongo import db
+from EMMA.decorator import register
+from EMMA.services.mongo import db
 from .utils.language import LANGUAGES, get_strings_dec, change_chat_lang, get_chat_lang_info, get_strings
 from .utils.message import get_arg
 
@@ -136,12 +136,12 @@ async def __import__(chat_id, data):
 __mod_name__ = "Languages"
 
 __help__ = """
-This module is dedicated towards utlising Daisy's localization feature! You can also <a href='https://crowdin.com/project/DaisyXx'>contribute</a> for improving localization in Daisy!
+This module is dedicated towards utlising EMMA's localization feature! You can also <a href='https://crowdin.com/project/EMMA'>contribute</a> for improving localization in EMMA!
 
 <b>Available commands:</b>
 - /lang: Shows a list of avaible languages
 - /lang (language codename): Sets a language
 
 <b>Example:</b> <code>/lang</code>
-Daisy will send you bunch of inline buttons where you can select your prefered language interatively without any hassles!
+EMMA will send you bunch of inline buttons where you can select your prefered language interatively without any hassles!
 """
