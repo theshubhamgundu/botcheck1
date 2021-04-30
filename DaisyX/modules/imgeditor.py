@@ -1,9 +1,9 @@
 # By @TroJanzHEX
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, Message
 from pyrogram import filters
-from DaisyX.services.pyrogram import pbot as Client
+from EMMA.services.pyrogram import pbot as Client
 # By @TroJanzHEX
-from DaisyX.Addons.ImageEditor.edit_1 import (  # pylint:disable=import-error
+from EMMA.Addons.ImageEditor.edit_1 import (  # pylint:disable=import-error
     bright,
     mix,
     black_white,
@@ -11,7 +11,7 @@ from DaisyX.Addons.ImageEditor.edit_1 import (  # pylint:disable=import-error
     normal_blur,
     box_blur,
 )
-from DaisyX.Addons.ImageEditor.edit_2 import (  # pylint:disable=import-error
+from EMMA.Addons.ImageEditor.edit_2 import (  # pylint:disable=import-error
     circle_with_bg,
     circle_without_bg,
     sticker,
@@ -21,13 +21,13 @@ from DaisyX.Addons.ImageEditor.edit_2 import (  # pylint:disable=import-error
     pencil,
     cartoon,
 )
-from DaisyX.Addons.ImageEditor.edit_3 import (  # pylint:disable=import-error
+from EMMA.Addons.ImageEditor.edit_3 import (  # pylint:disable=import-error
     green_border,
     blue_border,
     black_border,
     red_border,
 )
-from DaisyX.Addons.ImageEditor.edit_4 import (  # pylint:disable=import-error
+from EMMA.Addons.ImageEditor.edit_4 import (  # pylint:disable=import-error
     rotate_90,
     rotate_180,
     rotate_270,
@@ -37,7 +37,7 @@ from DaisyX.Addons.ImageEditor.edit_4 import (  # pylint:disable=import-error
     removebg_plain,
     removebg_sticker,
 )
-from DaisyX.Addons.ImageEditor.edit_5 import (  # pylint:disable=import-error
+from EMMA.Addons.ImageEditor.edit_5 import (  # pylint:disable=import-error
     normalglitch_1,
     normalglitch_2,
     normalglitch_3,
@@ -51,7 +51,7 @@ from DaisyX.Addons.ImageEditor.edit_5 import (  # pylint:disable=import-error
 )
 
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
-from DaisyX.services.pyrogram import pbot as Client
+from EMMA.services.pyrogram import pbot as Client
 lel = 00000000
 # pylint:disable=import-error
 @Client.on_message(filters.command(["edit", "editor"]))
@@ -415,7 +415,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 __mod_name__ = "Image Editor"
 __help__ = """
 <b> IMAGE EDITOR </b>
-Daisy have some advanced image editing tools inbuilt
+EMMA have some advanced image editing tools inbuilt
 Bright,Circle,RemBG,Blur,Border,Flip,Glitch,Sticker maker and more
 
 - /edit <i> reply to image</i> : Open the image editor
