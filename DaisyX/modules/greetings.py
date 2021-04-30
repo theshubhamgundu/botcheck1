@@ -1,4 +1,4 @@
-# This file is part of Daisy (Telegram Bot)
+# This file is part of EMMA bot
 
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU Affero General Public License as
@@ -33,14 +33,14 @@ from babel.dates import format_timedelta
 from captcha.image import ImageCaptcha
 from telethon.tl.custom import Button
 
-from DaisyX import BOT_USERNAME, BOT_ID, LOGS_CHANNEL_ID, bot, dp
-from DaisyX.config import get_str_key
-from DaisyX.decorator import register
-from DaisyX.services.apscheduller import scheduler
-from DaisyX.services.mongo import db
-from DaisyX.services.redis import redis
-from DaisyX.services.telethon import tbot
-from DaisyX.stuff.fonts import ALL_FONTS
+from EMMA import BOT_USERNAME, BOT_ID, LOGS_CHANNEL_ID, bot, dp
+from EMMA.config import get_str_key
+from EMMA.decorator import register
+from EMMA.services.apscheduller import scheduler
+from EMMA.services.mongo import db
+from EMMA.services.redis import redis
+from EMMA.services.telethon import tbot
+from EMMA.stuff.fonts import ALL_FONTS
 from .utils.connections import chat_connection
 from .utils.language import get_strings_dec
 from .utils.message import need_args_dec, convert_time
