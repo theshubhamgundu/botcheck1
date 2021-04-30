@@ -1,8 +1,8 @@
 """Get Detailed info about any message
 Syntax: .json"""
 import io
-from DaisyX.services.events import register
-from DaisyX.services.telethon import tbot as borg
+from EMMA.services.events import register
+from EMMA.services.telethon import tbot as borg
 from telethon import types
 from telethon import events
 from telethon.tl import functions, types
