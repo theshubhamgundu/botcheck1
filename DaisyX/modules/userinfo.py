@@ -4,10 +4,10 @@ from pyrogram import filters
 from pyrogram.errors import PeerIdInvalid
 from pyrogram.types import Message, User
 
-from DaisyX.services.pyrogram import pbot
+from EMMA.services.pyrogram import pbot
 import aiohttp
 from asyncio import sleep
-from DaisyX.services.pyrogram import pbot as kp
+from EMMA.services.pyrogram import pbot as kp
 
 
 def ReplyCheck(message: Message):
