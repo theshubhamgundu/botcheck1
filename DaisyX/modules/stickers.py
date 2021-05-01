@@ -1,4 +1,4 @@
-# This file is part of DaisyXBot (Telegram Bot)
+# This file is part of EMMA bot
 
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU Affero General Public License as
@@ -17,8 +17,8 @@ import io
 
 from aiogram.types.input_file import InputFile
 
-from DaisyX.services.telethon import tbot
-from DaisyX.services.telethonuserbot import ubot
+from EMMA.services.telethon import tbot
+from EMMA.services.telethonuserbot import ubot
 from bs4 import BeautifulSoup as bs
 import urllib.request as urllib
 import requests
@@ -39,14 +39,14 @@ from telethon.tl.types import (
     MessageMediaPhoto,
 )
 
-from DaisyX.services.events import register as Daisy
+from EMMA.services.events import register as EMMA
 from telethon import *
 from telethon import events
 from telethon.tl import functions
 from telethon.tl import types
-from DaisyX import bot
+from EMMA import bot
 
-from DaisyX.decorator import register
+from EMMA.decorator import register
 from .utils.disable import disableable_dec
 from .utils.language import get_strings_dec
 def is_it_animated_sticker(message):
@@ -125,7 +125,7 @@ def find_instance(items, class_or_tuple):
     return None
 
 
-@Daisy(pattern="^/searchsticker (.*)")
+@EMMA(pattern="^/searchsticker (.*)")
 async def _(event):
     input_str = event.pattern_match.group(1)
     combot_stickers_url = "https://combot.org/telegram/stickers?q="
@@ -143,7 +143,7 @@ async def _(event):
     await event.reply(reply)
 
 
-@Daisy(pattern="^/packinfo$")
+@EMMA(pattern="^/packinfo$")
 async def _(event):
     approved_userss = approved_users.find({})
     for ch in approved_userss:
@@ -198,7 +198,7 @@ def find_instance(items, class_or_tuple):
     return None
 
 
-DEFAULTUSER = "DaisyX"
+DEFAULTUSER = "EMMA"
 FILLED_UP_DADDY = "Invalid pack selected."
 
 async def get_sticker_emoji(event):
@@ -209,7 +209,7 @@ async def get_sticker_emoji(event):
         final_emoji = '😎'
     return final_emoji
 
-@Daisy(pattern="^/kang ?(.*)")
+@EMMA(pattern="^/kang ?(.*)")
 async def _(event):
     if not event.is_reply:
         await event.reply("PLease, Reply To A Sticker / Image To Add It Your Pack")
@@ -236,7 +236,7 @@ async def _(event):
         file_ext_ns_ion = "AnimatedSticker.tgs"
         uploaded_sticker = await ubot.upload_file(file, file_name=file_ext_ns_ion)
         packname = f"{first_name}'s Animated Sticker Vol.{pack}"
-        packshortname = f"DaisyX_animated_{userid}"
+        packshortname = f"EMMA_animated_{userid}"
     elif not is_message_image(reply_message):
         await kanga.edit("Oh no.. This Message type is invalid")
         return
