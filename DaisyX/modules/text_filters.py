@@ -3,10 +3,10 @@
 
 # Don't edit these lines
 
-from DaisyX.services.pyrogram import pbot as app
-from DaisyX.services.mongo2 import db
-from DaisyX.function.pluginhelpers import member_permissions
-from DaisyX.db.mongo_helpers.filterdb import (
+from EMMA.services.pyrogram import pbot as app
+from EMMA.services.mongo2 import db
+from EMMA.function.pluginhelpers import member_permissions
+from EMMA.db.mongo_helpers.filterdb import (
         _get_filters, save_filter,
         get_filters_names, get_filter,
         delete_filter
