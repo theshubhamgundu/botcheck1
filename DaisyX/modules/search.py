@@ -18,14 +18,14 @@ from telethon.tl import functions
 from telethon.tl import types
 from telethon.tl.types import *
 
-from DaisyX.services.telethon import tbot
-from DaisyX.services.events import register
+from EMMA.services.telethon import tbot
+from EMMA.services.events import register
 
 # This plugin is ported from https://github.com/thehamkercat/WilliamButcherBot
 from search_engine_parser import GoogleSearch
 from pyrogram import filters
-from DaisyX.services.pyrogram import pbot as app
-from DaisyX.modules.utils.fetch import fetch
+from EMMA.services.pyrogram import pbot as app
+from EMMA.modules.utils.fetch import fetch
 ARQ = "https://thearq.tech/"
 @app.on_message(filters.command("ud") & ~filters.edited)
 async def urbandict(_, message):
