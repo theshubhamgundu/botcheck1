@@ -7,12 +7,12 @@ from datetime import datetime
 
 from PIL import Image
 from telegraph import Telegraph, exceptions, upload_file
-from DaisyX.services.telethon import tbot as borg
+from EMMA.services.telethon import tbot as borg
 from telethon import events
 
 
 telegraph = Telegraph()
-r = telegraph.create_account(short_name="DaisyX")
+r = telegraph.create_account(short_name="EMMA")
 auth_url = r["auth_url"]
 
 #Will change later
