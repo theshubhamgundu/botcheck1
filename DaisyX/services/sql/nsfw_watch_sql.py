@@ -12,7 +12,7 @@
 #    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 from sqlalchemy import Boolean, Column, Integer, String, UnicodeText
-from DaisyX.services.sql import BASE, SESSION
+from EMMA.services.sql import BASE, SESSION
 
 
 class Nsfwatch(BASE):
