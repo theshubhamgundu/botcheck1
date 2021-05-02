@@ -2,7 +2,7 @@
 # Timer added by MissJuliaRobot
 import threading
 import time
-from DaisyX.services.sql import BASE, SESSION
+from EMMA.services.sql import BASE, SESSION
 from sqlalchemy import Boolean, Column, Integer, UnicodeText, String
 
 
