@@ -1,7 +1,7 @@
 from sqlalchemy import Column, LargeBinary, Numeric, String, UnicodeText
 
-from DaisyX.services.sql import BASE
-from DaisyX.services.sql import SESSION
+from EMMA.services.sql import BASE
+from EMMA.services.sql import SESSION
 
 
 class Filters(BASE):
