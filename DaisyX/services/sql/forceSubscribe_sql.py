@@ -1,6 +1,6 @@
 from sqlalchemy import Column, Numeric, String
 
-from DaisyX.services.sql import BASE, SESSION
+from EMMA.services.sql import BASE, SESSION
 
 
 class forceSubscribe(BASE):
